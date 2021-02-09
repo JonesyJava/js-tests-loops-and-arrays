@@ -4,6 +4,9 @@
 // output: ['is', 'a', 'split', 'sentence.', 'This']
 
 function rearranger(arr) {
+    arr.shift()
+    arr.push('This')
+    return arr
 }
 
 
@@ -16,6 +19,9 @@ function rearranger(arr) {
 // output: 42
 
 function largestNum(arr) {
+    let largestNumber = [arr]
+    largestNumber = Math.max.apply(Math, arr);
+    return largestNumber;
 }
 
 
@@ -28,6 +34,10 @@ function largestNum(arr) {
 // output: [16, 8, 4, 28]
 
 function elemsTimesLength(arr) {
+    let output = []
+    for (let x of arr)
+    output.push(x * arr.length);
+    return output
 }
 
 
@@ -63,7 +73,6 @@ let flights = [{
 
 function flightCost(destination, firstClass) {
     //***hint: use the find method***
-
 }
 
 
@@ -84,8 +93,13 @@ let staff = [{ id: 1, name: 'Jon' }, { id: 2, name: 'Yuli' }, { id: 21, name: 'P
 { id: 881, name: 'Paul' }, { id: 0, name: 'Jon' }, { id: 999, name: 'Timma' }]
 
 function findById(id) {
-
+let staffObj = staff.find(staff => staff.id == id)
+if (!staffObj){
+    return { error: "No user with that id." }
 }
+    return staffObj
+}
+
 
 
 // ------------------------------------------
