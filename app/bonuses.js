@@ -9,8 +9,17 @@
 // Hint: Utilize the string prototype method charCodeAt and generic method fromCharCode
 
 function letterChecker(str) {
+    let sorted = sentence.split('').sort().join('')
+    let firstChar = sorted.charCodeAt(0)
+    for (let i = 0; i < sentence.length; i++) {
+        if (char != sorted.charCodeAt(i)) {
+            return String.fromCharCode(charCode)
+        }
 
+    charCode++
 }
+}
+characters(str)
 
 
 // ------------------------------------------
