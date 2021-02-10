@@ -73,7 +73,26 @@ let flights = [{
 
 function flightCost(destination, firstClass) {
     //***hint: use the find method***
+    // take in a string
+    // itterate of flights array
+    // find matching flight object
+    // return price property based on firstClass == true
+for (let i = 0; i < flights.length; i++) {
+   if (destination.toUpperCase() == flights[i].to) {
+       if (firstClass == true) {
+           return flights[i].prices.firstClass
+
+       } else {
+           return flights[i].prices.standard
+       }
+   }    
 }
+
+}
+flightCost("CAN", false)
+flightCost("SEA", true)
+flightCost("LAX")
+flightCost("sea", false)
 
 
 // ------------------------------------------
