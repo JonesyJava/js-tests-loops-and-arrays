@@ -9,15 +9,15 @@
 // Hint: Utilize the string prototype method charCodeAt and generic method fromCharCode
 
 function letterChecker(str) {
-    let sorted = sentence.split('').sort().join('')
-    let firstChar = sorted.charCodeAt(0)
-    for (let i = 0; i < sentence.length; i++) {
-        if (char != sorted.charCodeAt(i)) {
+    let sorted = str.split('').sort().join('')
+    let charCode = sorted.charCodeAt(0)
+    for (let i = 0; i < str.length; i++) {
+        console.log(sorted.charCodeAt(i), sorted.charAt(i));
+        if (charCode != sorted.charCodeAt(i)) {
             return String.fromCharCode(charCode)
         }
-
-    charCode++
-}
+        charCode++
+    } return "no missing letters"
 }
 characters(str)
 
