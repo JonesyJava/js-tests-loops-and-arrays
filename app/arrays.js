@@ -144,4 +144,11 @@ let theBand = {
 }
 
 function bandMemberDetails(name) {
+    for(let i = 0; i < theBand.members.length; i++) {
+        let bandMember = theBand.members[i]
+        if (bandMember.name.includes(name)){
+            return (name + " is in the band and plays the " + bandMember.instrument)
+            // return `${name} is in the band and plays the ${bandMember.instrument}`
+        }
+    }
 }
