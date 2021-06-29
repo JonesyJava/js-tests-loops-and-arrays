@@ -32,6 +32,16 @@ characters(str)
 // output: true (because 4+3)
 
 function sumEqualsTarget(arr, target) {
+    let pastNums = []
+  for(i=0; i<= arr.length; i++){
+    pastNums.forEach(n => {
+      if(n + arr[i] == target){
+        return true
+      }
+    })
+    pastNums.push(arr[i])
+  }
+  return false
 }
 
 
