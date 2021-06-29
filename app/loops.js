@@ -22,14 +22,16 @@ for (let i = 1; i <= num; i++) {
 // output: 20
 
 function rangeTotal(n1, n2) {
-    let min = Math.min(n1),
-    max = Math.max(n2),
+    let min = Math.min(n1);
+    let max = Math.max(n2);
     sum = 0;
 for (let i = min; i <= max; i++) {
     sum += i;
 }
     return sum;
 }
+
+
 
 // ------------------------------------------
 

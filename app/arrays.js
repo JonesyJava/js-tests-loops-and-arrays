@@ -24,6 +24,12 @@ function largestNum(arr) {
     return largestNumber;
 }
 
+// BEGINNER LEVEL
+// let largest = 0
+// for(let i = 0; i <= arr.length; i++)
+// if (arr[i] > largest)
+// largest = arr[i]
+// return largest
 
 // ------------------------------------------
 
@@ -70,6 +76,20 @@ let flights = [{
     }
 }]
 
+// ANOTHER SOLUTION
+// function flightCost(destination, firstClass) {
+//     let flightDestination = destination.toUpperCase()
+//     let flightClass
+//     if (firstClass == true) {
+//         flightClass = 'firstClass'
+//     } else {
+//         flightClass = 'standard'
+//     }
+//     let flight = flights.find(flight => flight.to == flightDestination)
+//     console.log(flightClass)
+//     console.log(flight.prices[flightClass])
+//     return flight.prices[flightClass]
+// }
 
 function flightCost(destination, firstClass) {
     //***hint: use the find method***
